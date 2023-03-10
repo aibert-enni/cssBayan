@@ -4,11 +4,10 @@ body {
     font-weight: 700;
 }
 .container {
-    max-width: 1900px;
+    max-width: 118.75rem;
     margin: 0 auto;
     padding: 0 1rem;
 }
-
 
 .main-container {
     margin-top: 10rem;
@@ -19,7 +18,7 @@ body {
 
 .main__title {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .main__tab {
@@ -46,11 +45,7 @@ body {
     color: #393E46;
 }
 
-.main__tab:hover .tab-content__image{
-    max-height: 300px;
-}
-
-.tab-checkbox:checked ~ .tab-label .label-text {
+.main__tabs:hover .label-text, .tab-checkbox:checked ~ .tab-label .label-text {
     color: #000;
 }
 
@@ -69,13 +64,16 @@ body {
     transition: max-height 0.4s ease-out;
 }
 
-input[type="checkbox"] {
+input[type="radio"] {
     display: none;
     -webkit-appearance: none;
     appearance: none;
 }
 
-.tab-checkbox:checked ~ .tab__content-label .tab-content__image{
-    max-height: 300px;
+.main__tab:hover .tab-content__image, .tab-checkbox:checked:last-of-type ~ .tab__content-label .tab-content__image{
+    max-height: 20rem;
 }
 
+.tab-checkbox:not(:last-of-type) ~ .tab__content-label .tab-content__image {
+    max-height: 0;
+}
