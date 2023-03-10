@@ -9,6 +9,7 @@ body {
     padding: 0 1rem;
 }
 
+
 .main-container {
     margin-top: 10rem;
     display: flex;
@@ -30,7 +31,7 @@ body {
 .checkbox-icon {
     max-width: 1.8rem;
     opacity: 0;
-    transition: opacity 0.1s ease;
+    transition: opacity 0.1s ease, transfrom 0.1s ease;
 }
 
 .main__tabs:hover .checkbox-icon {
@@ -45,7 +46,11 @@ body {
     color: #393E46;
 }
 
-.main__tabs:hover .label-text {
+.main__tab:hover .tab-content__image{
+    max-height: 300px;
+}
+
+.tab-checkbox:checked ~ .tab-label .label-text {
     color: #000;
 }
 
@@ -70,6 +75,7 @@ input[type="checkbox"] {
     appearance: none;
 }
 
-.tab-checkbox:checked ~ .tab-content .tab-content__image{
+.tab-checkbox:checked ~ .tab__content-label .tab-content__image{
     max-height: 300px;
 }
+
