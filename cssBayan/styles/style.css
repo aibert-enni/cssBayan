@@ -111,3 +111,31 @@ input[type="radio"] {
         max-width: 1.4rem;
     }
 }
+/* mobile */
+@media(max-width:320px) {
+    :root {
+        --content-height: 6rem
+    }
+    body {
+        font-size: 1.2rem;
+    }
+    .container {
+        max-width: 20rem;
+    }
+
+    .main-container {
+        margin-top: 2rem;
+    }
+
+    .main__title {
+        font-size: 1.6rem;
+    }
+
+    .main__tab {
+        width: 17rem;
+    }
+
+    .checkbox-icon {
+        max-width: 1.4rem;
+    }
+}
