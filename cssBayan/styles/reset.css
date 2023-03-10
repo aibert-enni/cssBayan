@@ -4,12 +4,6 @@
 	border: none;
 }
 
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
-
 :focus,
 :active {
 	/*outline: none;*/
