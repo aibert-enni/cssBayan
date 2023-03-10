@@ -110,6 +110,18 @@ input[type="radio"] {
     .checkbox-icon {
         max-width: 1.4rem;
     }
+
+    .main__tabs:hover .checkbox-icon {
+        opacity: 0;
+    }
+
+    .main__tabs:hover .label-text {
+        color: #393E46
+    }
+
+    .main__tab:hover .tab-content__image {
+        max-width: 0;
+    }
 }
 /* mobile */
 @media(max-width:320px) {
@@ -137,5 +149,17 @@ input[type="radio"] {
 
     .checkbox-icon {
         max-width: 1.4rem;
+    }
+
+    .main__tabs:hover .checkbox-icon {
+        opacity: 0;
+    }
+
+    .main__tabs:hover .label-text {
+        color: #393E46
+    }
+
+    .main__tab:hover .tab-content__image {
+        max-width: 0;
     }
 }
