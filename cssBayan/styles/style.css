@@ -1,0 +1,19 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+}
+.container {
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__tab {
+    overflow: hidden;
+}
